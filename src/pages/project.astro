@@ -1,0 +1,57 @@
+---
+import Base from '@/templates/Base.astro';
+import { Section } from 'astro-boilerplate-components';
+
+const title = "Zimora - Rewards Platform";
+const description = "Digital rewards platform — Admin, Till, and Customer applications.";
+---
+
+<Base head={{ title, description }}>
+  <Section>
+    <h1 class="text-4xl font-bold mb-4">Zimora</h1>
+    <p class="mb-8 text-lg">
+      A multi-application rewards platform for customers, merchants, and administrators — 
+      designed for instant point earning and redemption, secure transactions, and intuitive UX.
+    </p>
+
+    <!-- Admin & Till Wireframes -->
+    <h2 class="text-2xl font-semibold mb-4">Admin & Till Interfaces (Wireframes)</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+      <img src="/images/wireframe-admin.png" alt="Admin Panel Wireframe" class="rounded shadow" />
+      <img src="/images/wireframe-till.png" alt="Till Interface Wireframe" class="rounded shadow" />
+    </div>
+
+    <!-- Customer App Screens (Square placeholders) -->
+    <h2 class="text-2xl font-semibold mb-4">Customer Mobile App</h2>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-8">
+      <div class="w-full aspect-square bg-gray-200 flex items-center justify-center text-gray-500">Add Screenshot</div>
+      <div class="w-full aspect-square bg-gray-200 flex items-center justify-center text-gray-500">Add Screenshot</div>
+      <div class="w-full aspect-square bg-gray-200 flex items-center justify-center text-gray-500">Add Screenshot</div>
+    </div>
+
+    <!-- Tech Stack -->
+    <h2 class="text-2xl font-semibold mb-4">Tech Stack</h2>
+    <div class="flex flex-wrap gap-4 mb-8">
+      <img src="/icons/python.svg" alt="Python" class="w-8 h-8" />
+      <img src="/icons/flask.svg" alt="Flask" class="w-8 h-8" />
+      <img src="/icons/fastapi.svg" alt="FastAPI" class="w-8 h-8" />
+      <img src="/icons/postgresql.svg" alt="PostgreSQL" class="w-8 h-8" />
+      <img src="/icons/typescript.svg" alt="TypeScript" class="w-8 h-8" />
+      <img src="/icons/flutter.svg" alt="Flutter" class="w-8 h-8" />
+      <img src="/icons/dart.svg" alt="Dart" class="w-8 h-8" />
+      <img src="/icons/nginx.svg" alt="Nginx" class="w-8 h-8" />
+      <img src="/icons/jinja.svg" alt="Jinja2" class="w-8 h-8" />
+    </div>
+
+    <!-- Architecture Diagram -->
+    <h2 class="text-2xl font-semibold mb-4">System Architecture</h2>
+    <img src="/images/zimora-architecture.png" alt="Zimora System Architecture" class="rounded shadow mb-8" />
+
+    <!-- Business Impact -->
+    <h2 class="text-2xl font-semibold mb-4">Business Impact</h2>
+    <p>
+      Handles 5,000+ daily transactions. Reduced redemption time from 2 minutes to under 5 seconds. 
+      Increased partner store engagement by 30% within the first quarter.
+    </p>
+  </Section>
+</Base>

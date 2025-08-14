@@ -1,0 +1,20 @@
+---
+const icons = [
+  { href: "https://www.linkedin.com/in/mudiwa-nyikavaranda/", icon: "/assets/images/linkedin-icon.png", alt: "LinkedIn" },
+  { href: "https://github.com/Mudinyika", icon: "/assets/images/github-cat.png", alt: "GitHub" },
+  { href: "mailto:mudiwanyikavaranda@gmail.com", icon: "/assets/images/gmail.png", alt: "Email" },
+  { href: "https://wa.me/263719426867", icon: "/assets/images/green.png", alt: "WhatsApp" },
+];
+---
+
+<div class="fixed top-4 right-4 flex flex-col gap-3 z-50">
+  {icons.map(({ href, icon, alt }) => (
+    <a href={href} target="_blank" rel="noopener noreferrer">
+      <img src={icon} alt={alt} class="w-10 h-10 rounded-full shadow-lg hover:scale-110 transition" />
+    </a>
+  ))}
+</div>
+
+<div class="fixed bottom-4 right-4 bg-white dark:bg-gray-900 px-3 py-1 rounded-full shadow-lg text-xs">
+  © Mudiwa Nyikavaranda 2025
+</div>
