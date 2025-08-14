@@ -29,3 +29,11 @@ git clone git@github.com:Mudinyika/mudiwa-portfolio.git
 cd mudiwa-portfolio
 npm install
 npm run dev
+```
+
+
+Open [http://localhost:4321] in your browser to view locally.
+
+## License
+
+- MIT License © 2025 Mudiwa Nyikavaranda
