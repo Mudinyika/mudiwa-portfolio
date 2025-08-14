@@ -32,7 +32,7 @@ npm run dev
 ```
 
 
-Open (http://localhost:4321) in your browser to view locally.
+Open http://localhost:4321 in your browser to view locally.
 
 ## License
 
