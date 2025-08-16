@@ -24,20 +24,53 @@ const description = "Digital rewards platform — Admin, Till, and Customer appl
     <!-- Till Screens -->
     <h2 class="text-2xl font-semibold mb-4">Till Application</h2>
     <div class="grid grid-cols-2 gap-6 mb-8">
-      <img src="/assets/images/till_login.JPG" alt="Till Login" class="rounded-xl" style="max-width: 300px;"/>
-      <img src="/assets/images/manager_approval.JPG" alt="Till Manager Approval" class="rounded-xl" style="max-width: 300px;"/>
-      <img src="/assets/images/add_points.JPG" alt="Till Allocate Points" class="rounded-xl" style="max-width: 300px;"/>
-      <img src="/assets/images/approve_points.JPG" alt="Till Points Input" class="rounded-xl" style="max-width: 300px;"/>
-      <img src="/assets/images/modal-preview.png" alt="Till Modal Preview" class="rounded-xl" style="max-width: 300px;"/>
+      <div class="flex flex-col items-center">
+        <h3 class="text-lg font-medium mb-2">Operator Logs In</h3>
+        <img src="/assets/images/till_login.JPG" alt="Till Login" class="rounded shadow max-w-[200px]"/>    
+      </div>
+      <div class="flex flex-col items-center">
+        <h3 class="text-lg font-medium mb-2">Admin Approves</h3>
+        <img src="/assets/images/manager_approval.JPG" alt="Till Manager Approval" class="rounded shadow max-w-[200px]"/>
+      </div>
     </div>
+    
+    <div class="grid grid-cols-2 gap-6 mb-8">
+      <div class="flex flex-col items-center">
+        <h3 class="text-lg font-medium mb-2">Operator Adds Points</h3>    
+        <img src="/assets/images/add_points.JPG" alt="Till Allocate Points" class="rounded shadow max-w-[300px]"/>
+      </div>
+      <div class="flex flex-col items-center">
+        <h3 class="text-lg font-medium mb-2">Operator Confirms Transaction</h3>    
+        <img src="/assets/images/approve_points.JPG" alt="Till Points Input" class="rounded shadow max-w-[300px]"/> 
+      </div>
+    </div>  
 
 
     <!-- Customer App Screens -->
     <h2 class="text-2xl font-semibold mb-4">Customer Mobile App</h2>
-    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-8">
-      <img src="/images/customer-home.png" alt="Customer Home" class="rounded shadow" />
-      <img src="/images/customer-earn.png" alt="Customer Earn Points" class="rounded shadow" />
-      <img src="/images/customer-redeem.png" alt="Customer Redeem Points" class="rounded shadow" />
+
+    <!-- First grid: Home Screen & View History -->
+    <div class="grid grid-cols-2 gap-6 mb-8">
+      <div class="flex flex-col items-center">
+        <h3 class="text-lg font-medium mb-2">Home Screen</h3>
+        <img src="/assets/images/home_screen.png" alt="Customer Home" class="rounded shadow max-w-[250px]" />
+      </div>
+      <div class="flex flex-col items-center">
+        <h3 class="text-lg font-medium mb-2">View History</h3>
+        <img src="/assets/images/history.png" alt="Customer History" class="rounded shadow max-w-[250px]" />
+      </div>
+    </div>
+
+    <!-- Second grid: Refund Info & Refund Modal -->
+    <div class="grid grid-cols-2 gap-6 mb-8">
+      <div class="flex flex-col items-center">
+        <h3 class="text-lg font-medium mb-2">Info on Refund</h3>
+        <img src="/assets/images/request_info.png" alt="Refund Info" class="rounded shadow max-w-[250px]" />
+      </div>
+      <div class="flex flex-col items-center">
+        <h3 class="text-lg font-medium mb-2">Refund Modal</h3>
+        <img src="/assets/images/confirm_request.png" alt="Refund Modal" class="rounded shadow max-w-[250px]" />
+      </div>
     </div>
 
     <!-- Tech Stack -->
