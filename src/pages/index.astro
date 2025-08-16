@@ -2,6 +2,7 @@
 import Base from '@/templates/Base.astro';
 import { Section } from 'astro-boilerplate-components';
 import { CTA } from '@/partials/CTA';
+import { ProjectList } from '@/partials/ProjectList';
 
 const title = "Mudiwa Portfolio";
 const description = "Showcasing my work, including the Zimora rewards platform.";
@@ -16,20 +17,8 @@ const description = "Showcasing my work, including the Zimora rewards platform."
     </p>
   </Section>
 
-  <Section>
-    <h2 class="text-3xl font-semibold mb-4">Zimora - Rewards Platform</h2>
-    <p class="mb-4">
-      A digital rewards platform enabling customers to earn and redeem points instantly.
-      Built with Flask, PostgreSQL, React, and JWT authentication.
-    </p>
-    <img src="/images/zimora-home.png" alt="Zimora Home Screen" class="mb-4" />
-    <a
-      href="/project"
-      class="inline-block bg-cyan-600 text-white px-4 py-2 rounded hover:bg-cyan-700"
-    >
-      View Project Details
-    </a>
-  </Section>
+  <!-- Render all projects as cards -->
+  <ProjectList />
 
   <CTA />
 </Base>
