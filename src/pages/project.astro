@@ -1,6 +1,7 @@
 ---
 import Base from '@/templates/Base.astro';
 import { Section } from 'astro-boilerplate-components';
+import AdminCarousel from '@/partials/AdminCarousel.tsx';
 
 const title = "Zimora - Rewards Platform";
 const description = "Digital rewards platform — Admin, Till, and Customer applications.";
@@ -14,12 +15,10 @@ const description = "Digital rewards platform — Admin, Till, and Customer appl
       designed for instant point earning and redemption, secure transactions, and intuitive UX.
     </p>
 
-    <!-- Admin Screens -->
+    <!-- Admin Screens: React Carousel/Video -->
     <h2 class="text-2xl font-semibold mb-4">Admin Interface</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-      <img src="/images/admin-dashboard.png" alt="Admin Dashboard" class="rounded shadow" />
-      <img src="/images/admin-reports.png" alt="Admin Reports" class="rounded shadow" />
-    </div>
+    <AdminCarousel client:load /> <!-- client:load renders React in browser -->
+
 
     <!-- Till Screens -->
     <h2 class="text-2xl font-semibold mb-4">Till Application</h2>
@@ -127,7 +126,39 @@ const description = "Digital rewards platform — Admin, Till, and Customer appl
 
     <!-- Architecture Diagram -->
     <h2 class="text-2xl font-semibold mb-4">System Architecture</h2>
-    <img src="/images/zimora-architecture.png" alt="Zimora System Architecture" class="rounded shadow mb-8" />
+
+    <!-- Descriptive paragraph -->
+    <p class="mb-4 text-lg">
+      Zimora’s system is built with modular components to ensure secure, instant, and scalable rewards processing. 
+      Customers interact through the mobile app, transactions are handled by the backend services, and admins monitor everything in real-time through the dashboard. 
+      Data is safely stored in PostgreSQL, and Nginx ensures efficient and reliable server delivery.
+    </p>
+
+    <!-- Clickable diagram -->
+    <a href="/assets/images/zimora_architecture1.drawio.svg" target="_blank" class="block mb-6">
+      <img 
+        src="/assets/images/zimora_architecture1.drawio.svg" 
+        alt="Zimora System Architecture" 
+        class="rounded shadow mb-2 hover:scale-105 transition-transform duration-200 max-w-full"
+      />
+    </a>
+    <p class="text-sm text-gray-500 mb-8">Click image to view full-size architecture diagram.</p>
+
+    <!-- Step-by-step flow -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8 text-center">
+      <div>
+        <h3 class="font-medium mb-1">1. User Action</h3>
+        <p class="text-sm">Customer interacts via the mobile app to earn or redeem points instantly.</p>
+      </div>
+      <div>
+        <h3 class="font-medium mb-1">2. Backend Processing</h3>
+        <p class="text-sm">API validates requests, updates point history, and adjusts shop float balances securely.</p>
+      </div>
+      <div>
+        <h3 class="font-medium mb-1">3. Confirmation & Reporting</h3>
+        <p class="text-sm">Admin dashboard and reports update in real-time, allowing monitoring and auditing of all transactions.</p>
+      </div>
+    </div>
 
     <!-- Business Impact -->
     <h2 class="text-2xl font-semibold mb-4">Business Impact</h2>

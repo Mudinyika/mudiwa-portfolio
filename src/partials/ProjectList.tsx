@@ -21,7 +21,7 @@ const ProjectList = () => (
         description="A digital rewards platform allowing customers to earn and redeem points instantly. Admin, Till, and Customer applications included."
         link="/project"
         img={{
-          src: '/images/zimora-home.png',
+          src: '/assets/images/zimora-home.PNG',
           alt: 'Zimora Home Screen',
         }}
         category={
@@ -37,11 +37,11 @@ const ProjectList = () => (
 
       {/* Project 2: SADC Bus Booking (upcoming) */}
       <Project
-        name="SADC Bus Booking System"
-        description="A multi-country bus booking platform for SADC, focusing on seamless ticketing, schedules, and payment across borders. Coming soon."
+        name="SADC Bus Booking System (Coming Soon)"
+        description="A multi-country bus booking platform for SADC, focusing on seamless ticketing, schedules, and payment across borders."
         link="#"
         img={{
-          src: '/images/project-bus.png', // placeholder image
+          src: '/assets/images/coming-soon.jpg',
           alt: 'Bus Booking System',
         }}
         category={
