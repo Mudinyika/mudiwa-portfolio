@@ -4,20 +4,20 @@ import { Section } from 'astro-boilerplate-components';
 import AdminCarousel from '@/partials/AdminCarousel.tsx';
 
 const title = "Zimora - Rewards Platform";
-const description = "Digital rewards platform — Admin, Till, and Customer applications.";
+const description = "Digital rewards platform — Admin, Till and Customer applications.";
 ---
 
 <Base head={{ title, description }}>
   <Section>
     <h1 class="text-4xl font-bold mb-4">Zimora</h1>
     <p class="mb-8 text-lg">
-      A multi-application rewards platform for customers, merchants, and administrators — 
-      designed for instant point earning and redemption, secure transactions, and intuitive UX.
+      A multi-application rewards platform for customers, merchants and administrators — 
+      designed for instant point earning and redemption, secure transactions and intuitive UX.
     </p>
 
     <!-- Admin Screens: React Carousel/Video -->
     <h2 class="text-2xl font-semibold mb-4">Admin Interface</h2>
-    <AdminCarousel client:load /> <!-- client:load renders React in browser -->
+    <AdminCarousel client:load />
 
 
     <!-- Till Screens -->
@@ -129,9 +129,9 @@ const description = "Digital rewards platform — Admin, Till, and Customer appl
 
     <!-- Descriptive paragraph -->
     <p class="mb-4 text-lg">
-      Zimora’s system is built with modular components to ensure secure, instant, and scalable rewards processing. 
-      Customers interact through the mobile app, transactions are handled by the backend services, and admins monitor everything in real-time through the dashboard. 
-      Data is safely stored in PostgreSQL, and Nginx ensures efficient and reliable server delivery.
+      Zimora’s system is built with modular components to ensure secure, instant and scalable rewards processing. 
+      Customers interact through the mobile app. Transactions are handled by the backend services and admins monitor everything in real-time through the dashboard. 
+      Data is safely stored in PostgreSQL and Nginx ensures efficient and reliable server delivery.
     </p>
 
     <!-- Clickable diagram -->

@@ -38,7 +38,7 @@ const ProjectList = () => (
       {/* Project 2: SADC Bus Booking (upcoming) */}
       <Project
         name="SADC Bus Booking System (Coming Soon)"
-        description="A multi-country bus booking platform for SADC, focusing on seamless ticketing, schedules, and payment across borders."
+        description="A multi-country bus booking platform for SADC focusing on seamless ticketing, schedules and payment across borders."
         link="#"
         img={{
           src: '/assets/images/coming-soon.jpg',
