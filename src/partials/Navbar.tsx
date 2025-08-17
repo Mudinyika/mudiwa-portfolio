@@ -37,6 +37,14 @@ const Navbar = () => (
         <NavMenuItem href="/project">Zimora</NavMenuItem>
         <NavMenuItem href="/about">About</NavMenuItem>
         <NavMenuItem href="/contact">Contact</NavMenuItem>
+        <a 
+          href="/files/Mudiwa_CV.pdf" 
+          target="_blank" 
+          download 
+          className="nav-menu-item" // optional: match styles
+        >
+          Download CV
+        </a>
       </NavMenu>
     </NavbarTwoColumns>
   </Section>
