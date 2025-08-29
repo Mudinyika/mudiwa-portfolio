@@ -34,8 +34,26 @@ const ProjectList = () => (
           </>
         }
       />
-
-      {/* Project 2: SADC Bus Booking (upcoming) */}
+     {/* Project 2: Zimora Website */}
+      <Project
+        name="Zimora Website"
+        description="Zimora is a multi-application rewards ecosystem that enables customers to earn and redeem points instantly, while merchants and administrators benefit from seamless management tools. Secure, fast, and intuitive."
+        link="https://www.zimora.co.zw"
+        img={{
+          src: '/assets/images/zimora-landing.png',
+          alt: 'Zimora Website Landing Page',
+        }}
+        category={
+          <>
+            <Tags color={ColorTags.EMERALD}>Next.js</Tags>
+            <Tags color={ColorTags.INDIGO}>TypeScript</Tags>
+            <Tags color={ColorTags.AMBER}>Tailwind CSS</Tags>
+            <Tags color={ColorTags.CYAN}>Flask API</Tags>
+            <Tags color={ColorTags.PINK}>PostgreSQL</Tags>
+          </>
+        }
+      />
+      {/* Project 3: SADC Bus Booking (upcoming) */}
       <Project
         name="SADC Bus Booking System (Coming Soon)"
         description="A multi-country bus booking platform for SADC focusing on seamless ticketing, schedules and payment across borders."
