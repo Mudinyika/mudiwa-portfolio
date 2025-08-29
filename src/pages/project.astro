@@ -9,74 +9,72 @@ const description = "Digital rewards platform — Admin, Till and Customer appli
 
 <Base head={{ title, description }}>
   <Section>
-    <h1 class="text-4xl font-bold mb-4">Zimora</h1>
-    <p class="mb-8 text-lg">
+    <h1 class="text-3xl sm:text-4xl font-bold mb-4">Zimora</h1>
+    <p class="mb-8 text-base sm:text-lg">
       A multi-application rewards platform for customers, merchants and administrators — 
       designed for instant point earning and redemption, secure transactions and intuitive UX.
     </p>
 
-    <!-- Admin Screens: React Carousel/Video -->
-    <h2 class="text-2xl font-semibold mb-4">Admin Interface</h2>
+    <!-- Admin Screens -->
+    <h2 class="text-xl sm:text-2xl font-semibold mb-4">Admin Interface</h2>
     <AdminCarousel client:load />
 
-
     <!-- Till Screens -->
-    <h2 class="text-2xl font-semibold mb-4">Till Application</h2>
-    <div class="grid grid-cols-2 gap-6 mb-8">
+    <h2 class="text-xl sm:text-2xl font-semibold mb-4">Till Application</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
       <div class="flex flex-col items-center">
-        <h3 class="text-lg font-medium mb-2">Operator Logs In</h3>
-        <img src="/assets/images/till_login.JPG" alt="Till Login" class="rounded shadow max-w-[200px]"/>    
+        <h3 class="text-base sm:text-lg font-medium mb-2">Operator Logs In</h3>
+        <img src="/assets/images/till_login.JPG" alt="Till Login" class="rounded shadow w-full max-w-[250px] h-auto"/>    
       </div>
       <div class="flex flex-col items-center">
-        <h3 class="text-lg font-medium mb-2">Admin Approves</h3>
-        <img src="/assets/images/manager_approval.JPG" alt="Till Manager Approval" class="rounded shadow max-w-[200px]"/>
+        <h3 class="text-base sm:text-lg font-medium mb-2">Admin Approves</h3>
+        <img src="/assets/images/manager_approval.JPG" alt="Till Manager Approval" class="rounded shadow w-full max-w-[250px] h-auto"/>
       </div>
     </div>
     
-    <div class="grid grid-cols-2 gap-6 mb-8">
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
       <div class="flex flex-col items-center">
-        <h3 class="text-lg font-medium mb-2">Operator Adds Points</h3>    
-        <img src="/assets/images/add_points.JPG" alt="Till Allocate Points" class="rounded shadow max-w-[300px]"/>
+        <h3 class="text-base sm:text-lg font-medium mb-2">Operator Adds Points</h3>    
+        <img src="/assets/images/add_points.JPG" alt="Till Allocate Points" class="rounded shadow w-full max-w-[300px] h-auto"/>
       </div>
       <div class="flex flex-col items-center">
-        <h3 class="text-lg font-medium mb-2">Operator Confirms Transaction</h3>    
-        <img src="/assets/images/approve_points.JPG" alt="Till Points Input" class="rounded shadow max-w-[300px]"/> 
+        <h3 class="text-base sm:text-lg font-medium mb-2">Operator Confirms Transaction</h3>    
+        <img src="/assets/images/approve_points.JPG" alt="Till Points Input" class="rounded shadow w-full max-w-[300px] h-auto"/> 
       </div>
     </div>  
 
-
     <!-- Customer App Screens -->
-    <h2 class="text-2xl font-semibold mb-4">Customer Mobile App</h2>
+    <h2 class="text-xl sm:text-2xl font-semibold mb-4">Customer Mobile App</h2>
 
-    <!-- First grid: Home Screen & View History -->
-    <div class="grid grid-cols-2 gap-6 mb-8">
+    <!-- First grid: Home & History -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
       <div class="flex flex-col items-center">
-        <h3 class="text-lg font-medium mb-2">Home Screen</h3>
-        <img src="/assets/images/home_screen.png" alt="Customer Home" class="rounded shadow max-w-[250px]" />
+        <h3 class="text-base sm:text-lg font-medium mb-2">Home Screen</h3>
+        <img src="/assets/images/home_screen.png" alt="Customer Home" class="rounded shadow w-full max-w-[250px] h-auto" />
       </div>
       <div class="flex flex-col items-center">
-        <h3 class="text-lg font-medium mb-2">View History</h3>
-        <img src="/assets/images/history.png" alt="Customer History" class="rounded shadow max-w-[250px]" />
+        <h3 class="text-base sm:text-lg font-medium mb-2">View History</h3>
+        <img src="/assets/images/history.png" alt="Customer History" class="rounded shadow w-full max-w-[250px] h-auto" />
       </div>
     </div>
 
-    <!-- Second grid: Refund Info & Refund Modal -->
-    <div class="grid grid-cols-2 gap-6 mb-8">
+    <!-- Second grid: Refund -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
       <div class="flex flex-col items-center">
-        <h3 class="text-lg font-medium mb-2">Info on Refund</h3>
-        <img src="/assets/images/request_info.png" alt="Refund Info" class="rounded shadow max-w-[250px]" />
+        <h3 class="text-base sm:text-lg font-medium mb-2">Info on Refund</h3>
+        <img src="/assets/images/request_info.png" alt="Refund Info" class="rounded shadow w-full max-w-[250px] h-auto" />
       </div>
       <div class="flex flex-col items-center">
-        <h3 class="text-lg font-medium mb-2">Refund Modal</h3>
-        <img src="/assets/images/confirm_request.png" alt="Refund Modal" class="rounded shadow max-w-[250px]" />
+        <h3 class="text-base sm:text-lg font-medium mb-2">Refund Modal</h3>
+        <img src="/assets/images/confirm_request.png" alt="Refund Modal" class="rounded shadow w-full max-w-[250px] h-auto" />
       </div>
     </div>
 
     <!-- Tech Stack -->
-    <h2 class="text-2xl font-semibold mb-4">Tech Stack</h2>
+    <h2 class="text-xl sm:text-2xl font-semibold mb-4">Tech Stack</h2>
 
-    <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 mb-8 text-center">
-      <!-- Languages -->
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 mb-8 text-center">
+      <!-- Example -->
       <div class="flex flex-col items-center">
         <img src="/assets/images/python.svg" alt="Python" class="w-12 h-12 mb-1"/>
         <span class="text-sm">Python</span>
@@ -86,11 +84,9 @@ const description = "Digital rewards platform — Admin, Till and Customer appli
         <span class="text-sm">TypeScript</span>
       </div>
       <div class="flex flex-col items-center">
-        <img src="/assets/images/dart.svg" alt="Dart" class="w-15 h-14 mb-1"/>
+        <img src="/assets/images/dart.svg" alt="Dart" class="w-12 h-12 mb-1"/>
         <span class="text-sm">Dart</span>
       </div>
-
-      <!-- Frameworks / Backend -->
       <div class="flex flex-col items-center">
         <img src="/assets/images/flask.svg" alt="Flask" class="w-12 h-12 mb-1"/>
         <span class="text-sm">Flask</span>
@@ -100,51 +96,41 @@ const description = "Digital rewards platform — Admin, Till and Customer appli
         <span class="text-sm">FastAPI</span>
       </div>
       <div class="flex flex-col items-center">
-        <img src="/assets/images/jinja2.svg" alt="Jinja2" class="w-13 h-12 mb-1"/>
+        <img src="/assets/images/jinja2.svg" alt="Jinja2" class="w-12 h-12 mb-1"/>
         <span class="text-sm">Jinja2</span>
       </div>
-
-      <!-- Database -->
       <div class="flex flex-col items-center">
         <img src="/assets/images/elephant.png" alt="PostgreSQL" class="w-12 h-12 mb-1"/>
         <span class="text-sm">PostgreSQL</span>
       </div>
-
-      <!-- Frontend / Mobile -->
       <div class="flex flex-col items-center">
-        <img src="/assets/images/flutter.svg" alt="Flutter" class="w-17 h-17 mb-1"/>
+        <img src="/assets/images/flutter.svg" alt="Flutter" class="w-12 h-12 mb-1"/>
         <span class="text-sm">Flutter</span>
       </div>
-
-      <!-- Infrastructure / Server -->
       <div class="flex flex-col items-center">
         <img src="/assets/images/nginx.svg" alt="Nginx" class="w-12 h-12 mb-1"/>
         <span class="text-sm">Nginx</span>
       </div>
     </div>
 
-
     <!-- Architecture Diagram -->
-    <h2 class="text-2xl font-semibold mb-4">System Architecture</h2>
-
-    <!-- Descriptive paragraph -->
-    <p class="mb-4 text-lg">
+    <h2 class="text-xl sm:text-2xl font-semibold mb-4">System Architecture</h2>
+    <p class="mb-4 text-base sm:text-lg">
       Zimora’s system is built with modular components to ensure secure, instant and scalable rewards processing. 
       Customers interact through the mobile app. Transactions are handled by the backend services and admins monitor everything in real-time through the dashboard. 
       Data is safely stored in PostgreSQL and Nginx ensures efficient and reliable server delivery.
     </p>
 
-    <!-- Clickable diagram -->
     <a href="/assets/images/zimora_architecture1.drawio.svg" target="_blank" class="block mb-6">
       <img 
         src="/assets/images/zimora_architecture1.drawio.svg" 
         alt="Zimora System Architecture" 
-        class="rounded shadow mb-2 hover:scale-105 transition-transform duration-200 max-w-full"
+        class="rounded shadow mb-2 hover:scale-105 transition-transform duration-200 w-full max-w-full h-auto"
       />
     </a>
     <p class="text-sm text-gray-500 mb-8">Click image to view full-size architecture diagram.</p>
 
-    <!-- Step-by-step flow -->
+    <!-- Flow -->
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8 text-center">
       <div>
         <h3 class="font-medium mb-1">1. User Action</h3>
@@ -159,11 +145,12 @@ const description = "Digital rewards platform — Admin, Till and Customer appli
         <p class="text-sm">Admin dashboard and reports update in real-time, allowing monitoring and auditing of all transactions.</p>
       </div>
     </div>
-   <!-- Business Impact (Planned) -->
-  <h2 class="text-2xl font-semibold mb-4">Expected Business Impact</h2>
-  <p>
-    Designed to handle high transaction volumes efficiently, with instant point redemption and real-time reporting. 
-    Aims to improve partner store engagement and streamline customer rewards once deployed.
-  </p>
+
+    <!-- Business Impact -->
+    <h2 class="text-xl sm:text-2xl font-semibold mb-4">Expected Business Impact</h2>
+    <p>
+      Designed to handle high transaction volumes efficiently, with instant point redemption and real-time reporting. 
+      Aims to improve partner store engagement and streamline customer rewards once deployed.
+    </p>
   </Section>
 </Base>
